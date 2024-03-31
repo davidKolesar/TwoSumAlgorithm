@@ -50,13 +50,12 @@ class Solution {
 			if(map.containsKey(target - nums[i])){
                 return new int[]{map.get(target - nums[i]), i};
             } else {
-				//if not, store the ith element and its index in the map
+		//if not, store the ith element and its index in the map
                 map.put(nums[i], i);
             }
         }
         return null;
     }
-}
 
 ### Why use a hashmap instead of just sorting with Arrays.sort() ? 
 
